@@ -1,6 +1,29 @@
 {
-  "name": "@numjs/react",
+  "name": "@webwasm/numjs-react",
   "version": "0.1.0",
+  "description": "React hooks and provider for @webwasm/numjs-core — use NumPy-style WebAssembly arrays in your React app.",
+  "keywords": [
+    "numjs",
+    "numpy",
+    "react",
+    "react-hooks",
+    "useNp",
+    "NpProvider",
+    "webassembly",
+    "wasm",
+    "ndarray"
+  ],
+  "author": "eklavya-raj",
+  "license": "MIT",
+  "homepage": "https://github.com/eklavya-raj/numjs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eklavya-raj/numjs.git",
+    "directory": "packages/react"
+  },
+  "bugs": {
+    "url": "https://github.com/eklavya-raj/numjs/issues"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -10,6 +33,10 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch"
@@ -18,10 +45,13 @@
     "react": ">=18"
   },
   "dependencies": {
-    "@numjs/core": "workspace:*"
+    "@webwasm/numjs-core": "workspace:*"
   },
   "devDependencies": {
     "typescript": "^5.4.5",
     "@types/react": "^18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

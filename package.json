@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "build:wasm": "cd packages/numjs-core && wasm-pack build --target web --out-dir ../numjs/wasm",
+    "build:wasm": "cd packages/numjs-core && wasm-pack build --target web --out-dir ../numjs/wasm && node -e \"const fs=require('fs');['../numjs/wasm/.gitignore','../numjs/wasm/package.json'].forEach(f=>{try{fs.unlinkSync(f)}catch(e){}});\"",
     "build:numjs": "cd packages/numjs && tsc",
     "build:react": "cd packages/react && tsc",
     "build": "pnpm build:wasm && pnpm build:numjs && pnpm build:react",

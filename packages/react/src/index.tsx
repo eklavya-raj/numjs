@@ -5,8 +5,8 @@ import React, {
   useState,
   type ReactNode,
 } from 'react';
-import { init, np } from '@numjs/core';
-import type { NumArray } from '@numjs/core';
+import { init, np } from '@webwasm/numjs-core';
+import type { NumArray } from '@webwasm/numjs-core';
 
 // ── Context ──────────────────────────────────────────────────────────────────
 
@@ -33,7 +33,7 @@ export interface NpProviderProps {
  * Initialises the WASM module and makes `np` available via `useNp()`.
  *
  * @example
- * import { NpProvider } from '@numjs/react';
+ * import { NpProvider } from '@webwasm/numjs-react';
  *
  * function App() {
  *   return (
@@ -69,7 +69,7 @@ export function NpProvider({ children, fallback = null }: NpProviderProps) {
  * Must be used inside a `<NpProvider>`.
  *
  * @example
- * import { useNp } from '@numjs/react';
+ * import { useNp } from '@webwasm/numjs-react';
  *
  * function MyComponent() {
  *   const { np, ready } = useNp();

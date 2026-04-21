@@ -37,17 +37,17 @@ Scientific computing in JavaScript has always been a compromise — pure-JS libr
 
 ## 📦 Packages
 
-This is a pnpm monorepo organised under the `@numjs` scope so framework adapters can be added without bloating the core.
+This is a pnpm monorepo published under the `@webwasm` npm scope so framework adapters can be added without bloating the core.
 
 | Package | Description | Status |
 |---|---|:---:|
-| **[`@numjs/core`](./packages/numjs)** | TypeScript API + WASM loader — the main entry point | ✅ Stable |
-| **[`@numjs/react`](./packages/react)** | `NpProvider` + `useNp` hook for React apps | ✅ Stable |
+| **[`@webwasm/numjs-core`](./packages/numjs)** | TypeScript API + WASM loader — the main entry point | ✅ Stable |
+| **[`@webwasm/numjs-react`](./packages/react)** | `NpProvider` + `useNp` hook for React apps | ✅ Stable |
 | **[`numjs-core`](./packages/numjs-core)** | Rust crate compiled to WASM (internal) | ✅ Stable |
-| **[`@numjs/docs`](./apps/docs)** | Interactive Storybook playground | ✅ Live |
-| `@numjs/svelte` | Svelte bindings | 🚧 Planned |
-| `@numjs/vue` | Vue composables | 🚧 Planned |
-| `@numjs/angular` | Angular service | 🚧 Planned |
+| **[`@webwasm/numjs-docs`](./apps/docs)** | Interactive Storybook playground | ✅ Live |
+| `@webwasm/numjs-svelte` | Svelte bindings | 🚧 Planned |
+| `@webwasm/numjs-vue` | Vue composables | 🚧 Planned |
+| `@webwasm/numjs-angular` | Angular service | 🚧 Planned |
 
 ---
 
@@ -72,7 +72,7 @@ pnpm storybook   # launch the interactive playground on http://localhost:6006
 ### Vanilla TypeScript / JavaScript
 
 ```ts
-import { init, np } from '@numjs/core';
+import { init, np } from '@webwasm/numjs-core';
 
 await init();                               // load WASM once at startup
 
@@ -94,7 +94,7 @@ np.max(a2);   // 4
 ### React — `useNp` hook
 
 ```tsx
-import { NpProvider, useNp } from '@numjs/react';
+import { NpProvider, useNp } from '@webwasm/numjs-react';
 
 function App() {
   return (
@@ -183,10 +183,10 @@ Then open **http://localhost:6006** and explore:
 - [ ] SIMD intrinsics (wasm-simd128)
 
 ### 🚧 v0.6+ — Framework ecosystem
-- [ ] `@numjs/svelte` — stores + `$np` rune
-- [ ] `@numjs/vue` — composables
-- [ ] `@numjs/angular` — injectable service
-- [ ] `@numjs/solid` — signals integration
+- [ ] `@webwasm/numjs-svelte` — stores + `$np` rune
+- [ ] `@webwasm/numjs-vue` — composables
+- [ ] `@webwasm/numjs-angular` — injectable service
+- [ ] `@webwasm/numjs-solid` — signals integration
 
 ---
 
@@ -198,7 +198,7 @@ Then open **http://localhost:6006** and explore:
 └──────────────┬───────────────────────────────┬──────────────┘
                │                               │
      ┌─────────▼─────────┐          ┌──────────▼──────────┐
-     │   @numjs/core     │          │    @numjs/react     │
+     │ @webwasm/numjs-core│         │ @webwasm/numjs-react│
      │  (TypeScript API) │◄─────────┤ (Provider + hooks)  │
      └─────────┬─────────┘          └─────────────────────┘
                │

@@ -14,10 +14,10 @@ importers:
 
   apps/docs:
     dependencies:
-      '@numjs/core':
+      '@webwasm/numjs-core':
         specifier: workspace:*
         version: link:../../packages/numjs
-      '@numjs/react':
+      '@webwasm/numjs-react':
         specifier: workspace:*
         version: link:../../packages/react
       react:
@@ -72,7 +72,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@numjs/core':
+      '@webwasm/numjs-core':
         specifier: workspace:*
         version: link:../numjs
       react:

@@ -1,6 +1,30 @@
 {
-  "name": "@numjs/core",
+  "name": "@webwasm/numjs-core",
   "version": "0.1.0",
+  "description": "NumPy-compatible numerical computing for JavaScript and TypeScript — powered by Rust and WebAssembly.",
+  "keywords": [
+    "numpy",
+    "numjs",
+    "ndarray",
+    "matrix",
+    "linear-algebra",
+    "scientific-computing",
+    "webassembly",
+    "wasm",
+    "rust",
+    "typescript"
+  ],
+  "author": "eklavya-raj",
+  "license": "MIT",
+  "homepage": "https://github.com/eklavya-raj/numjs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eklavya-raj/numjs.git",
+    "directory": "packages/numjs"
+  },
+  "bugs": {
+    "url": "https://github.com/eklavya-raj/numjs/issues"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -10,11 +34,19 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "files": [
+    "dist",
+    "wasm",
+    "README.md"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch"
   },
   "devDependencies": {
     "typescript": "^5.4.5"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

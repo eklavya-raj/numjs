@@ -19,7 +19,7 @@ const config: StorybookConfig = {
     config.plugins = [...(config.plugins ?? []), wasm()];
     config.optimizeDeps = {
       ...(config.optimizeDeps ?? {}),
-      exclude: [...((config.optimizeDeps?.exclude) ?? []), '@numjs/core'],
+      exclude: [...((config.optimizeDeps?.exclude) ?? []), '@webwasm/numjs-core'],
     };
     return config;
   },

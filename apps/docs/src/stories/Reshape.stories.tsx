@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { WasmDemo } from './WasmDemo';
-import { np } from '@numjs/core';
+import { np } from '@webwasm/numjs-core';
 
 const hidden = { table: { disable: true } } as const;
 const textControl = (desc: string) => ({ control: 'text', description: desc } as const);

@@ -1,5 +1,5 @@
 {
-  "name": "@numjs/docs",
+  "name": "@webwasm/numjs-docs",
   "version": "0.0.1",
   "private": true,
   "type": "module",
@@ -8,8 +8,8 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@numjs/core": "workspace:*",
-    "@numjs/react": "workspace:*",
+    "@webwasm/numjs-core": "workspace:*",
+    "@webwasm/numjs-react": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "vite-plugin-wasm": "^3.6.0"

@@ -5,6 +5,6 @@ import wasm from 'vite-plugin-wasm';
 export default defineConfig({
   plugins: [wasm(), react()],
   optimizeDeps: {
-    exclude: ['@numjs/core'],
+    exclude: ['@webwasm/numjs-core'],
   },
 });

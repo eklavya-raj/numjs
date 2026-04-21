@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback, useRef } from 'react';
-import { useNp } from '@numjs/react';
+import { useNp } from '@webwasm/numjs-react';
 
 /** Label + type annotation for a single parameter slot (not editable via Controls) */
 export interface ParamDef {

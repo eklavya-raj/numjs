@@ -7,7 +7,7 @@ let initPromise: Promise<void> | null = null;
  * Load the WASM module. Must be called once before using any numjs functions.
  *
  * @example
- * import { init, np } from '@numjs/core';
+ * import { init, np } from '@webwasm/numjs-core';
  * await init();
  * const a = np.zeros([3, 3]);
  */
