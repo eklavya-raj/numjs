@@ -1,0 +1,3 @@
+[workspace]
+members = ["packages/numjs-core"]
+resolver = "2"

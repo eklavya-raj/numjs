@@ -1,0 +1,30 @@
+{
+  "name": "@numjs/docs",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "dependencies": {
+    "@numjs/core": "workspace:*",
+    "@numjs/react": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite-plugin-wasm": "^3.6.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "^8.1.11",
+    "@storybook/addon-essentials": "^8.1.11",
+    "@storybook/addon-interactions": "^8.1.11",
+    "@storybook/react": "^8.1.11",
+    "@storybook/react-vite": "^8.1.11",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "storybook": "^8.1.11",
+    "typescript": "^5.4.5",
+    "vite": "^5.3.1"
+  }
+}
